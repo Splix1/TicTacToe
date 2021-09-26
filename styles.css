@@ -48,7 +48,8 @@ body {
     bottom: 100px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    font-size-adjust: 1;
+    font-size-adjust: 2.5;
+    padding: 14px 40px;
 }
 
 .winner {
@@ -57,6 +58,6 @@ body {
     bottom: 85%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    font-size-adjust: 1;
+    font-size-adjust: 2;
     color: gold;
 }
