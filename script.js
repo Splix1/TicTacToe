@@ -78,7 +78,9 @@ class TicTacToe {
        } else if(board[2] === 'O' && board[4] === 'O' && board[6] === 'O'){
            winnerMessage.innerText = 'O WINS'
            return
-       } else if(boardLength <= 0){
+       }
+       //check for tie 
+       else if(boardLength <= 0){
            winnerMessage.innerText = 'TIE'
        }
     }
