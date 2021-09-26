@@ -48,8 +48,11 @@ body {
     bottom: 100px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    font-size-adjust: 2.5;
     padding: 20px 40px;
+}
+
+.clear > button {
+    font-size-adjust: 2.5;
 }
 
 .winner {
