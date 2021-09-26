@@ -35,7 +35,7 @@ body {
 .X-or-O {
     position: absolute;
     left: 50%;
-    bottom: 525px;
+    bottom: 80%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     color: white;
@@ -54,7 +54,7 @@ body {
 .winner {
     position: absolute;
     left: 50%;
-    bottom: 550px;
+    bottom: 85%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     font-size-adjust: 1;
