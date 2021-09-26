@@ -1,0 +1,62 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #000, rgb(55, 56, 56), #696969);
+}
+
+.gamebuttons {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 140vh;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.gamebuttons > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    font-size-adjust: 1.5;
+    outline: none;
+    background-color: white;
+}
+
+.gamebuttons > button:hover {
+    background-color:red;
+}
+
+.X-or-O {
+    position: absolute;
+    left: 50%;
+    bottom: 500px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: white;
+    font-size-adjust: 0.5;
+}
+
+.clear {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size-adjust: 1;
+}
+
+.winner {
+    position: absolute;
+    left: 50%;
+    bottom: 550px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size-adjust: 1;
+    color: gold;
+}
