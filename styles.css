@@ -35,7 +35,7 @@ body {
 .X-or-O {
     position: absolute;
     left: 50%;
-    bottom: 500px;
+    bottom: 525px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     color: white;
