@@ -1,7 +1,7 @@
 class TicTacToe {
     clear(){
         board = ['', '', '', '', '', '', '', '', '']
-        boardLength = 7
+        boardLength = 9
         let X = document.getElementById('X')
         let O = document.getElementById('O')
         O.checked = false
@@ -94,7 +94,7 @@ const oSel = document.getElementById('O')
 let userSelected
 let enemyCharacter
 let board = [,,,,,,,,]
-let boardLength = 7
+let boardLength = 9
 const tictactoe = new TicTacToe()
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
@@ -106,10 +106,14 @@ const userUpdateArr = (num) => {
 }
 const enemyUpdateArr = () => {
     let r = getRandomIntInclusive(0, 8)
+    if(boardLength === 0){
+        return
+    }
     if(elementButton[r].innerText !== 'X' && elementButton[r].innerText !== 'O'){
         board[r] = enemyCharacter
         elementButton[r].innerText = enemyCharacter
-        boardLength -= 2
+        boardLength--
+        tictactoe.checkBoard()
     } else {
         enemyUpdateArr()
     }
@@ -129,8 +133,11 @@ elementButton.forEach(button => {
             return
         } else {
         button.innerText = userSelected
-        enemyUpdateArr()
+        boardLength--
         tictactoe.checkBoard()
+        if(winnerMessage.innerText === ''){
+            enemyUpdateArr()
+        }
         }
     })
 })
