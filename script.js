@@ -137,7 +137,7 @@ elementButton.forEach(button => {
         button.innerText = userSelected
         boardLength--
         tictactoe.checkBoard()
-        if(winnerMessage.innerText === ''){
+        if(winnerMessage.innerText === '' && loserMessage.innerText === ''){
             enemyUpdateArr()
         }
         }
