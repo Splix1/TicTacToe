@@ -9,6 +9,7 @@ class TicTacToe {
         userSelected = ''
         enemyCharacter = ''
         winnerMessage.innerText = ''
+        loserMessage.innerText = ''
         elementButton.forEach(button => {
             button.innerText = ''
         })
