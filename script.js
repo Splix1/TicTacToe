@@ -16,67 +16,67 @@ class TicTacToe {
     
     checkBoard(){
        //check first row
-       if(board[0] === 'X' && board[1] === 'X' && board[2] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[0] === userSelected && board[1] === userSelected && board[2] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[0] === 'O' && board[1] === 'O' && board[2] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[0] === enemyCharacter && board[1] === enemyCharacter && board[2] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check second row
-       if(board[3] === 'X' && board[4] === 'X' && board[5] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[3] === userSelected && board[4] === userSelected && board[5] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[3] === 'O' && board[4] === 'O' && board[5] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[3] === enemyCharacter && board[4] === enemyCharacter && board[5] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check third row
-       if(board[6] === 'X' && board[7] === 'X' && board[8] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[6] === userSelected && board[7] === userSelected && board[8] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[6] === 'O' && board[7] === 'O' && board[8] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[6] === enemyCharacter && board[7] === enemyCharacter && board[8] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check first column
-       if(board[0] === 'X' && board[3] === 'X' && board[6] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[0] === userSelected && board[3] === userSelected && board[6] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[0] === 'O' && board[3] === 'O' && board[6] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[0] === enemyCharacter && board[3] === enemyCharacter && board[6] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check second column
-       if(board[1] === 'X' && board[4] === 'X' && board[7] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[1] === userSelected && board[4] === userSelected && board[7] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[1] === 'O' && board[4] === 'O' && board[7] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[1] === enemyCharacter && board[4] === enemyCharacter && board[7] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check third column
-       if(board[2] === 'X' && board[5] === 'X' && board[8] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[2] === userSelected && board[5] === userSelected && board[8] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[2] === 'O' && board[5] === 'O' && board[8] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[2] === enemyCharacter && board[5] === enemyCharacter && board[8] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check for left diagonal win
-       if(board[0] === 'X' && board[4] === 'X' && board[8] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[0] === userSelected && board[4] === userSelected && board[8] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[0] === 'O' && board[4] === 'O' && board[8] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[0] === enemyCharacter && board[4] === enemyCharacter && board[8] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check for right diagonal win
-       if(board[2] === 'X' && board[4] === 'X' && board[6] === 'X'){
-           winnerMessage.innerText = 'X WINS'
+       if(board[2] === userSelected && board[4] === userSelected && board[6] === userSelected){
+           winnerMessage.innerText = 'YOU WON'
            return
-       } else if(board[2] === 'O' && board[4] === 'O' && board[6] === 'O'){
-           winnerMessage.innerText = 'O WINS'
+       } else if(board[2] === enemyCharacter && board[4] === enemyCharacter && board[6] === enemyCharacter){
+           winnerMessage.innerText = 'YOU LOST'
            return
        }
        //check for tie 
