@@ -2,8 +2,8 @@ class TicTacToe {
     clear(){
         board = ['', '', '', '', '', '', '', '', '']
         boardLength = 7
-        X = document.getElementById('X')
-        O = document.getElementById('O')
+        let X = document.getElementById('X')
+        let O = document.getElementById('O')
         O.checked = false
         X.checked = false
         userSelected = ''
@@ -82,6 +82,7 @@ class TicTacToe {
        //check for tie 
        else if(boardLength <= 0){
            winnerMessage.innerText = 'TIE'
+           return
        }
     }
 }
