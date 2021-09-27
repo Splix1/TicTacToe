@@ -20,7 +20,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[0] === enemyCharacter && board[1] === enemyCharacter && board[2] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+        loserMessage.innerText = 'YOU LOST'
            return
        }
        //check second row
@@ -28,7 +28,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[3] === enemyCharacter && board[4] === enemyCharacter && board[5] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+        loserMessage.innerText = 'YOU LOST'
            return
        }
        //check third row
@@ -36,7 +36,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[6] === enemyCharacter && board[7] === enemyCharacter && board[8] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+        loserMessage.innerText = 'YOU LOST'
            return
        }
        //check first column
@@ -44,7 +44,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[0] === enemyCharacter && board[3] === enemyCharacter && board[6] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+        loserMessage.innerText = 'YOU LOST'
            return
        }
        //check second column
@@ -52,7 +52,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[1] === enemyCharacter && board[4] === enemyCharacter && board[7] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+        loserMessage.innerText = 'YOU LOST'
            return
        }
        //check third column
@@ -60,7 +60,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[2] === enemyCharacter && board[5] === enemyCharacter && board[8] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+        loserMessage.innerText = 'YOU LOST'
            return
        }
        //check for left diagonal win
@@ -68,7 +68,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[0] === enemyCharacter && board[4] === enemyCharacter && board[8] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+        loserMessage.innerText = 'YOU LOST'
            return
        }
        //check for right diagonal win
@@ -76,7 +76,7 @@ class TicTacToe {
            winnerMessage.innerText = 'YOU WON'
            return
        } else if(board[2] === enemyCharacter && board[4] === enemyCharacter && board[6] === enemyCharacter){
-           winnerMessage.innerText = 'YOU LOST'
+           loserMessage.innerText = 'YOU LOST'
            return
        }
        //check for tie 
@@ -89,6 +89,7 @@ class TicTacToe {
 const elementButton = document.querySelectorAll('[data-element]')
 const clearButton = document.querySelector('[data-clear]')
 const winnerMessage = document.getElementById('winner')
+const loserMessage = document.getElementById('loser')
 const xSel = document.getElementById('X')
 const oSel = document.getElementById('O')
 let userSelected
@@ -126,7 +127,7 @@ elementButton.forEach(button => {
         if(oSel.checked === false && xSel.checked === false){
             return
         }
-        if(winnerMessage.innerText === 'X WINS' || winnerMessage.innerText === 'O WINS'){
+        if(winnerMessage.innerText === 'YOU WON' || loserMessage.innerText === 'YOU LOST'){
             return
         }
         if(button.innerText !== ''){

@@ -52,6 +52,7 @@ body {
     font-size: 20px;
     padding: 14px 40px;
     border-radius: 45%;
+    background-color: white;
 }
 
 .winner {
@@ -62,4 +63,14 @@ body {
     margin: 0 auto;
     font-size-adjust: 2;
     color: gold;
+}
+
+.loser {
+    position: absolute;
+    left: 50%;
+    bottom: 85%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size-adjust: 2;
+    color: red;
 }
