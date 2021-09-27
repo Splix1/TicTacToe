@@ -45,7 +45,7 @@ body {
 .clear {
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    top: 85%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     padding: 20px 40px;
