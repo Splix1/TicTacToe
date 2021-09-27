@@ -51,6 +51,7 @@ body {
     padding: 20px 40px;
     font-size: 20px;
     padding: 14px 40px;
+    border-radius: 45%;
 }
 
 .winner {
